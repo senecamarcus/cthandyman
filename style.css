@@ -65,9 +65,61 @@ h1 {
   }
 }
 
+/* ... (existing CSS) aqui comienza la seccion the main a queda responsive ... */
+
 .main {
-  margin-bottom: 500px;
+  padding: 20px; /* Add some padding around the main content */
 }
+
+.main h2 {
+  margin-bottom: 10px; /* Add some spacing below the heading */
+}
+
+.main ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main li {
+  margin: 10px 0; /* Add vertical spacing between each list item */
+  display: flex; /* Use flexbox to align text and icon horizontally */
+  align-items: center;
+}
+
+.main li::before {
+  content: "\2022"; /* Use a bullet point (•) as a pseudo-element before each list item */
+  font-size: 16px;
+  margin-right: 10px; /* Add space between bullet point and text */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  /* ... (existing CSS) ... */
+
+  .main {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main h2 {
+    text-align: center; /* Center the heading for smaller screens */
+  }
+
+  .main li {
+    justify-content: center; /* Center the text and icon for smaller screens */
+  }
+
+  .main li::before {
+    display: none; /* Hide the bullet points on smaller screens */
+  }
+}
+/* NOTA: aqui termina la seccion main */
+
 
 .container {
   max-width: 1200px;
@@ -80,6 +132,22 @@ h1 {
  
 }
 
+.handyman1 {
+  width: 400px;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .handyman1
+{ flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;}
+  
+  
+}
+
 .footer {
   background-color: black;
   color: #fff;
@@ -87,3 +155,4 @@ h1 {
   padding: 10px 0;
   flex-shrink: 0; /* Prevent the footer from shrinking */
 }
+
