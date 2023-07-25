@@ -116,6 +116,10 @@ h1 {
   .main li::before {
     display: none; /* Hide the bullet points on smaller screens */
   }
+
+  .main p {
+    text-align: center; /* esta parte centra el texto cuando se utiliza un dispositivo de pantalla mas pequeña */
+  }
 }
 /* NOTA: aqui termina la seccion main */
 
@@ -152,13 +156,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .contact1 {
-    justify-content: center;
 
-  }
-  
-}
 
 .footer {
   background-color: black;
