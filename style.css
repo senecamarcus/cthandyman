@@ -152,7 +152,7 @@ h1 {
 
   /* Adjust the image size for smaller screens */
   .handyman1 {
-    max-width: 300px; /* Reduce the maximum width for smaller screens */
+    max-width: 370px; /* Reduce the maximum width for smaller screens */
   }
 }
 
