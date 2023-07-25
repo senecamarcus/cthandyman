@@ -95,7 +95,6 @@ h1 {
 
 /* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
-  /* ... (existing CSS) ... */
 
   .main {
     padding: 10px; /* Reduce padding for smaller screens */
@@ -132,12 +131,16 @@ h1 {
  
 }
 
-.handyman1 {
-  width: 400px;
-  height: auto;
-  max-width: 100%;
-}
 
+
+/* Common styles for the .handyman1 image */
+.handyman1 {
+  width: 100%;
+  height: auto;
+  max-width: 400px; /* Set the maximum width for the image */
+  margin: 0 auto; /* Center the image horizontally */
+  display: block; /* Remove any default margins or spacing */
+}
 
 /* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
@@ -145,11 +148,10 @@ h1 {
 
   /* Adjust the image size for smaller screens */
   .handyman1 {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
+    max-width: 280px; /* Reduce the maximum width for smaller screens */
   }
 }
+
 
 .footer {
   background-color: black;
