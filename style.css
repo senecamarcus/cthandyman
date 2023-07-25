@@ -6,13 +6,14 @@ body {
 }
 
 h1 {
-  color: #007bff;
+  color: #ffffff;
 }
 
 .bar {
   display: flex;
   background-color: black;
   align-items: center;
+  justify-content: space-between; /* Align items to both ends */
   padding: 10px;
 }
 
@@ -20,7 +21,7 @@ h1 {
   margin: 0 20px 0 10px; /* Adjust the margins as needed */
 }
 
-.about {
+.nav-links {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -28,13 +29,18 @@ h1 {
   color: #f0f0f0;
 }
 
-.about li {
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links li {
   margin: 20px;
 }
 
 /* Additional styling to make the ul align on the right side */
-.bar .about {
-  margin-left: auto;
+.bar .nav-links {
+  margin-right: 20px; /* Add margin on the right side */
 }
 
 /* Responsive design for smaller screens */
@@ -46,12 +52,12 @@ h1 {
     padding: 20px;
   }
 
-  .about {
+  .nav-links {
     flex-direction: column;
     align-items: center;
   }
 
-  .about li {
+  .nav-links li {
     margin: 10px 0;
   }
 }
