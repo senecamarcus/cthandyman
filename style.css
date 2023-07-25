@@ -138,14 +138,18 @@ h1 {
   max-width: 100%;
 }
 
+/* ... (existing CSS) ... */
+
+/* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
-  .handyman1
-{ flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;}
-  
-  
+  /* ... (existing CSS) ... */
+
+  /* Adjust the image size for smaller screens */
+  .handyman1 {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
 }
 
 .footer {
