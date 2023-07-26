@@ -41,12 +41,17 @@ li {
 }
 
 .bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   background-color: rgba(8, 8, 8, 0.7); /* Semi-transparent background color */
   align-items: center;
   justify-content: space-between; /* Align items to both ends */
   padding: 10px;
 }
+
 
 .logo {
   margin: 0 20px 0 10px; /* Adjust the margins as needed */
@@ -95,9 +100,10 @@ li {
 
 
 
+/* ... (previous CSS rules) ... */
+
 /* New styles for the slogan */
 .slogan {
-  
   color: #fff;
   padding: 10px;
   text-align: center;
@@ -106,7 +112,6 @@ li {
   margin-bottom: 100px;
 }
 
-
 /* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
   /* ... (existing CSS) ... */
@@ -114,8 +119,11 @@ li {
   /* Adjust the font size for smaller screens */
   .slogan {
     font-size: 16px;
+    margin-top: 150px; /* Increase the top margin for mobile screens to create more space between slogan and bar */
+    margin-bottom: 50px; /* Reduce the bottom margin to make the slogan closer to the main content */
   }
 }
+
 
 /* ... (existing CSS) aqui comienza la seccion the main a queda responsive ... */
 
