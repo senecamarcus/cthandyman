@@ -12,16 +12,6 @@ body {
   background-attachment: fixed; /* Set the background image to stay fixed */
 }
 
-/* New styles for the black transparent overlay */
-.body-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.); /* Black color with 50% opacity */
-}
-
 
 h1 {
   color: #ffffff;
@@ -88,6 +78,8 @@ li {
     padding: 20px;
   }
 
+  
+
   .nav-links {
     flex-direction: column;
     align-items: center;
@@ -99,8 +91,6 @@ li {
 }
 
 
-
-/* ... (previous CSS rules) ... */
 
 /* New styles for the slogan */
 .slogan {
@@ -119,7 +109,7 @@ li {
   /* Adjust the font size for smaller screens */
   .slogan {
     font-size: 16px;
-    margin-top: 150px; /* Increase the top margin for mobile screens to create more space between slogan and bar */
+    margin-top: 280px; /* Increase the top margin for mobile screens to create more space between slogan and bar */
     margin-bottom: 50px; /* Reduce the bottom margin to make the slogan closer to the main content */
   }
 }
@@ -198,23 +188,8 @@ li {
  
 }
 
-/* Common styles for the .handyman1 image */
-.handyman1 {
-  width: 100%;
-  height: auto;
-  max-width: 400px; /* Set the maximum width for the image */
-  margin: 0 auto; /* Center the image horizontally */
-  display: block; /* Remove any default margins or spacing */
-}
-
-/* Responsive design for smaller screens */
-@media screen and (max-width: 768px) {
-  /* ... (existing CSS) ... */
-
-  /* Adjust the image size for smaller screens */
-  .handyman1 {
-    max-width: 370px; /* Reduce the maximum width for smaller screens */
-  }
+.services1 {
+  margin-bottom: 40px;
 }
 
 .about1 {
@@ -235,3 +210,4 @@ li {
   padding: 10px 0;
   flex-shrink: 0; /* Prevent the footer from shrinking */
 }
+
