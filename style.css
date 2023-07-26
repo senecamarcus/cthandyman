@@ -9,7 +9,19 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative; /* Set the position to relative for stacking the black overlay on top of the background image */
 }
+
+/* New styles for the black transparent overlay */
+.body-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Black color with 50% opacity */
+}
+
 
 h1 {
   color: #ffffff;
@@ -30,7 +42,7 @@ li {
 
 .bar {
   display: flex;
-  background-color: rgba(8, 8, 8, 0.5); /* Semi-transparent background color */
+  background-color: rgba(8, 8, 8, 0.7); /* Semi-transparent background color */
   align-items: center;
   justify-content: space-between; /* Align items to both ends */
   padding: 10px;
@@ -85,13 +97,15 @@ li {
 
 /* New styles for the slogan */
 .slogan {
-  background-color: rgba(8, 8, 8, 0.5); /* Semi-transparent background color */
+  
   color: #fff;
   padding: 10px;
   text-align: center;
-  font-size: 18px;
-  margin-top: 20px; /* Add margin to separate the slogan from the header */
+  font-size: 24px;
+  margin-top: 50px; /* Add margin to separate the slogan from the header */
+  margin-bottom: 100px;
 }
+
 
 /* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
@@ -107,6 +121,8 @@ li {
 
 .main {
   padding: 20px; /* Add some padding around the main content */
+  background-color: rgba(8, 8, 8, 0.5); /* Semi-transparent background color */
+  margin: 1%;
 }
 
 .main h2 {
@@ -136,6 +152,7 @@ li {
 
   .main {
     padding: 10px; /* Reduce padding for smaller screens */
+    
   }
 
   .main-content {
@@ -193,7 +210,7 @@ li {
 }
 
 .about1 {
-  background-color: rgba(8, 8, 8, 0.5); /* Semi-transparent background color */
+  
   color: #f0f0f0;
   padding-top: 3px;
   padding-left: 8px;
@@ -204,7 +221,7 @@ li {
 }
 
 .footer {
-  background-color: rgba(8, 8, 8, 0.5); /* Semi-transparent background color */
+  background-color: rgba(8, 8, 8, 0.7); /* Semi-transparent background color */
   color: #fff;
   text-align: center;
   padding: 10px 0;
